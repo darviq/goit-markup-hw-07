@@ -1,6 +1,6 @@
 .order-section {
-  color: var(--secondary-text-color);
-  background-color: var(--tertiary-bg-color);
+  color: $secondary-text-color;
+  background-color: $tertiary-bg-color;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -30,8 +30,8 @@
   }
 
   .button {
-    background-color: var(--accent-color);
-    color: var(--secondary-text-color);
+    background-color: $accent-color;
+    color: $secondary-text-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;

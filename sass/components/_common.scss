@@ -6,9 +6,9 @@
 }
 
 body {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
-  font-family: var(--primary-font-family);
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: $primary-font-family;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

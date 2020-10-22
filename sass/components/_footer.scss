@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--tertiary-bg-color);
-  color: var(--secondary-text-color);
+  background-color: $tertiary-bg-color;
+  color: $secondary-text-color;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -18,7 +18,7 @@
   width: 270px;
 
   .logo-link {
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
   }
 }
 
@@ -31,8 +31,8 @@
   }
 
   .link {
-    color: var(--secondary-text-color-alfa);
-    transition: color 250ms var(--timing-function);
+    color: $secondary-text-color-alfa;
+    transition: color 250ms $timing-function;
 
     &:not(:last-child) {
       display: inline-block;
@@ -41,7 +41,7 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 }
@@ -70,19 +70,19 @@
     padding: 12px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms var(--timing-function);
+    transition: background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
-      background-color: var(--accent-color);
+      background-color: $accent-color;
     }
   }
 
   .icon-footer {
-    fill: var(--primary-bg-color);
+    fill: $primary-bg-color;
     width: 20px;
     height: 20px;
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
   }
 }
 
@@ -109,23 +109,23 @@
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    background-color: var(--tertiary-bg-color);
+    background-color: $tertiary-bg-color;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color-alfa);
+    color: $secondary-text-color-alfa;
 
     &::placeholder {
       font-size: 16px;
       line-height: 1.25;
       letter-spacing: 0.03em;
-      color: var(--secondary-text-color-alfa);
+      color: $secondary-text-color-alfa;
     }
   }
 
   button {
-    background-color: var(--accent-color);
-    color: var(--secondary-text-color);
+    background-color: $accent-color;
+    color: $secondary-text-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;

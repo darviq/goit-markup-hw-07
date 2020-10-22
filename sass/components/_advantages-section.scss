@@ -14,7 +14,7 @@
       display: block;
       height: 120px;
       border-radius: 4px;
-      background-color: var(--secondary-bg-color);
+      background-color: $secondary-bg-color;
       margin-bottom: 30px;
       background-repeat: no-repeat;
       background-position: center;
@@ -22,7 +22,7 @@
   }
 
   .title {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

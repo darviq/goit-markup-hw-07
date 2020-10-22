@@ -6,23 +6,23 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function;
 }
 
 .is-hidden {
   pointer-events: none;
   opacity: 0;
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms $timing-function;
 
   .modal-window {
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 250ms var(--timing-function);
+    transition: transform 250ms $timing-function;
   }
 }
 
 .modal-window {
   width: 528px;
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -34,13 +34,13 @@
   flex-direction: column;
   position: relative;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms $timing-function;
 
   h2 {
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    color: var(--title-text-color);
+    color: $title-text-color;
     margin-bottom: 12px;
   }
 
@@ -52,8 +52,8 @@
       padding: 10px 55px;
       margin-left: auto;
       margin-right: auto;
-      background-color: var(--accent-color);
-      color: var(--secondary-text-color);
+      background-color: $accent-color;
+      color: $secondary-text-color;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.88;
@@ -68,7 +68,7 @@
     height: 30px;
     padding: 8.5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--primary-bg-color);
+    background-color: $primary-bg-color;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
@@ -78,12 +78,12 @@
     svg {
       width: 11px;
       height: 11px;
-      transition: fill 250ms var(--timing-function);
+      transition: fill 250ms $timing-function;
     }
 
     &:hover,
     &:focus {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 }
@@ -109,15 +109,15 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
-    transition: border-color 250ms var(--timing-function);
+    transition: border-color 250ms $timing-function;
 
     &:focus {
-      border-color: var(--accent-color);
+      border-color: $accent-color;
       outline: none;
     }
 
     &:focus + .icon {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 
@@ -128,7 +128,7 @@
     bottom: 50%;
     left: 12px;
     transform: translateY(50%);
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
   }
 }
 
@@ -151,7 +151,7 @@
     border-radius: 4px;
     resize: none;
     padding: 12px 16px;
-    transition: border-color 250ms var(--timing-function);
+    transition: border-color 250ms $timing-function;
 
     &::placeholder {
       font-size: 12px;
@@ -161,7 +161,7 @@
     }
 
     &:focus {
-      border-color: var(--accent-color);
+      border-color: $accent-color;
       outline: none;
     }
   }
@@ -198,6 +198,6 @@
   }
 
   .policy-link {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }

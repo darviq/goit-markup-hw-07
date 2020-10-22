@@ -2,7 +2,7 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  border-bottom: 1px solid var(--secondary-bg-color);
+  border-bottom: 1px solid $secondary-bg-color;
   position: relative;
 
   .container {
@@ -20,8 +20,8 @@
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
-    color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
+    color: $title-text-color;
+    transition: color 250ms $timing-function;
   }
 }
 
@@ -39,17 +39,17 @@
   }
 
   .link {
-    color: var(--title-text-color);
-    transition: color 250ms var(--timing-function);
+    color: $title-text-color;
+    transition: color 250ms $timing-function;
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 
   .active {
-    color: var(--accent-color);
+    color: $accent-color;
 
     &::after {
       content: "";
@@ -59,7 +59,7 @@
       height: 4px;
       width: 100%;
       border-radius: 2px;
-      background-color: var(--accent-color);
+      background-color: $accent-color;
     }
   }
 }
@@ -69,10 +69,10 @@
   display: flex;
 
   .link {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     display: flex;
     align-items: center;
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
 
     &:not(:last-child) {
       margin-right: 30px;
@@ -80,19 +80,19 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
 
     &:hover svg,
     &:focus svg {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 
   svg {
-    fill: var(--primary-text-color);
+    fill: $primary-text-color;
     margin-right: 10px;
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
   }
 
   .envelope {
