@@ -1,41 +1,47 @@
 .clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.clients-section .title {
-  color: var(--title-text-color);
+  .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
 
-  margin-bottom: 50px;
-}
+  .company {
+    width: calc((100% - 5 * 30px) / 6);
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color 250ms var(--timing-function);
 
-.clients-section .list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.clients-section .company {
-  width: calc((100% - 5 * 30px) / 6);
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
-  transition: border-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+    }
+  }
 }
 
 .company svg {
   fill: #afb1b8;
-
   transition: fill 250ms var(--timing-function);
+}
+
+.company:hover svg,
+.company:focus svg {
+  fill: var(--accent-color);
 }
 
 .company-01 svg {
@@ -66,14 +72,4 @@
 .company-06 svg {
   width: 88.48px;
   height: 45.44px;
-}
-
-.clients-section .company:hover,
-.clients-section .company:focus {
-  border-color: var(--accent-color);
-}
-
-.company:hover svg,
-.company:focus svg {
-  fill: var(--accent-color);
 }
